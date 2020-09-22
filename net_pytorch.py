@@ -1,7 +1,5 @@
 import argparse
 
-#import theano
-#import theano.tensor as T
 import torch as T
 from torch import nn
 import torch.nn.functional as F
@@ -198,8 +196,8 @@ def run(args):
 
         func.cuda()
 
-    optimizerD = Adam(dis.parameters(), lr=args.d_lr, betas=(0.5, 0.9))
-    optimizerG = Adam(gen.parameters(), lr=args.g_lr, betas=(0.5, 0.9))
+    #optimizerD = Adam(dis.parameters(), lr=args.d_lr, betas=(0.5, 0.9))
+    #optimizerG = Adam(gen.parameters(), lr=args.g_lr, betas=(0.5, 0.9))
 
     for nnn in range(20):
         print('Drawing...')
